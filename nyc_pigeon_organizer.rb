@@ -9,9 +9,9 @@ def nyc_pigeon_organizer(data)
     else
       new_hash[pigeon][:gender] = ["female"]
     end
-    data[:color].each do |color|
-      if color.include?(pigeon)
-        new_hash[pigeon][:color] = ["white"]
+    data[:color].each do |key, value|
+      if key[value] == pigeon
+        new_hash[pigeon][:color].push(key)
       end
     end
   end
