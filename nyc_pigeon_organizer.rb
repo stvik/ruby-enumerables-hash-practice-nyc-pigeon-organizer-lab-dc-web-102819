@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
     end
     data[:color].each do |key, value|
       if key[value] == pigeon
-        new_hash[pigeon][:color].push(key)
+        new_hash[pigeon][:color] = "white"
       end
     end
   end
