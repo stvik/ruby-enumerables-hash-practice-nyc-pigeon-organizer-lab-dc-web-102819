@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
     end
     data[:color].each do |key, value|
       if value.include?(pigeon)
-        new_hash[pigeon][:color].push(key.to_str)
+        new_hash[pigeon][:color].push(key.to_s)
       end
     end
   end
